@@ -2,9 +2,32 @@
 <head>
     <title>Sample App</title>
     <link rel="shortcut icon" href="">
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+  
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAjainl--_Mwt5wYpPQyUD3X7QxcSOdUIQ",
+        authDomain: "my-test-2960e.firebaseapp.com",
+        databaseURL: "https://my-test-2960e.firebaseio.com",
+        storageBucket: "my-test-2960e.appspot.com",
+        messagingSenderId: "463908576486"
+    };
+    firebase.initializeApp(config);
+
+     
+
+    console.log('App Name is ', firebase.app().name);  // "[DEFAULT]"
+    </script>
+
 </head>
 <body>
     <div id='root'></div>
+    <div id="firebaseui-auth-container"></div>
     <script src="/static/bundle.js"></script>
 </body>
 </html>
